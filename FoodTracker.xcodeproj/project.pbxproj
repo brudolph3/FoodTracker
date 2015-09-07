@@ -16,6 +16,8 @@
 		A34596351B9D4018006A17D8 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34596341B9D4018006A17D8 /* RatingControl.swift */; settings = {ASSET_TAGS = (); }; };
 		A3D737E61B9E1FFB00C3BE6E /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D737E51B9E1FFB00C3BE6E /* meal.swift */; settings = {ASSET_TAGS = (); }; };
 		A3D737E71B9E1FFB00C3BE6E /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D737E51B9E1FFB00C3BE6E /* meal.swift */; settings = {ASSET_TAGS = (); }; };
+		A3D737E91B9E378200C3BE6E /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D737E81B9E378200C3BE6E /* MealTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		A3D737EB1B9E3E1F00C3BE6E /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D737EA1B9E3E1F00C3BE6E /* MealTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		A224B90E1B8F9C0D00F6B800 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		A34596341B9D4018006A17D8 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A3D737E51B9E1FFB00C3BE6E /* meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = meal.swift; sourceTree = "<group>"; };
+		A3D737E81B9E378200C3BE6E /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		A3D737EA1B9E3E1F00C3BE6E /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				A224B8F81B8F9C0D00F6B800 /* AppDelegate.swift */,
 				A224B8FA1B8F9C0D00F6B800 /* ViewController.swift */,
 				A224B8FC1B8F9C0D00F6B800 /* Main.storyboard */,
+				A3D737EA1B9E3E1F00C3BE6E /* MealTableViewController.swift */,
+				A3D737E81B9E378200C3BE6E /* MealTableViewCell.swift */,
 				A224B8FF1B8F9C0D00F6B800 /* Images.xcassets */,
 				A224B9011B8F9C0D00F6B800 /* LaunchScreen.xib */,
 				A224B8F61B8F9C0D00F6B800 /* Supporting Files */,
@@ -225,6 +231,8 @@
 				A224B8FB1B8F9C0D00F6B800 /* ViewController.swift in Sources */,
 				A34596351B9D4018006A17D8 /* RatingControl.swift in Sources */,
 				A224B8F91B8F9C0D00F6B800 /* AppDelegate.swift in Sources */,
+				A3D737EB1B9E3E1F00C3BE6E /* MealTableViewController.swift in Sources */,
+				A3D737E91B9E378200C3BE6E /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
