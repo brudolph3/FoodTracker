@@ -14,6 +14,8 @@
 		A224B9031B8F9C0D00F6B800 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A224B9011B8F9C0D00F6B800 /* LaunchScreen.xib */; };
 		A224B90F1B8F9C0D00F6B800 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A224B90E1B8F9C0D00F6B800 /* FoodTrackerTests.swift */; };
 		A34596351B9D4018006A17D8 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34596341B9D4018006A17D8 /* RatingControl.swift */; settings = {ASSET_TAGS = (); }; };
+		A3D737E61B9E1FFB00C3BE6E /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D737E51B9E1FFB00C3BE6E /* meal.swift */; settings = {ASSET_TAGS = (); }; };
+		A3D737E71B9E1FFB00C3BE6E /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D737E51B9E1FFB00C3BE6E /* meal.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		A224B90D1B8F9C0D00F6B800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A224B90E1B8F9C0D00F6B800 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		A34596341B9D4018006A17D8 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		A3D737E51B9E1FFB00C3BE6E /* meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				A224B9011B8F9C0D00F6B800 /* LaunchScreen.xib */,
 				A224B8F61B8F9C0D00F6B800 /* Supporting Files */,
 				A34596341B9D4018006A17D8 /* RatingControl.swift */,
+				A3D737E51B9E1FFB00C3BE6E /* meal.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -161,7 +165,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Bradley Rudolph";
 				TargetAttributes = {
 					A224B8F21B8F9C0D00F6B800 = {
@@ -217,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D737E61B9E1FFB00C3BE6E /* meal.swift in Sources */,
 				A224B8FB1B8F9C0D00F6B800 /* ViewController.swift in Sources */,
 				A34596351B9D4018006A17D8 /* RatingControl.swift in Sources */,
 				A224B8F91B8F9C0D00F6B800 /* AppDelegate.swift in Sources */,
@@ -227,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D737E71B9E1FFB00C3BE6E /* meal.swift in Sources */,
 				A224B90F1B8F9C0D00F6B800 /* FoodTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +288,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -351,6 +358,7 @@
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "csuchico.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -362,6 +370,7 @@
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "csuchico.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -380,6 +389,7 @@
 				);
 				INFOPLIST_FILE = FoodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "csuchico.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTracker.app/FoodTracker";
 			};
@@ -395,6 +405,7 @@
 				);
 				INFOPLIST_FILE = FoodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "csuchico.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodTracker.app/FoodTracker";
 			};

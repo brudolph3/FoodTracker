@@ -36,7 +36,7 @@ class RatingControl: UIView {
             button.setImage(filledStarImage, forState: [.Highlighted, .Selected])
             
             button.adjustsImageWhenHighlighted = false
-            
+            // I am having an issue here!!!!!
             button.addTarget(self, action: "ratingButtonTapped:", forControlEvents: .TouchDown)
             ratingButtons += [button]
             addSubview(button)
