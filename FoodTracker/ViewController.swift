@@ -17,6 +17,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    
+    var meal = Meal?()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +55,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         // Dismiss the imagePicker
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // MARK: Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if saveButton === sender {
+            let name = nameTextField.text ?? ""
+            let photo = photoImageView.image
+            let rating = ratingControl.rating
+            
+            meal = Meal(name: name, photo: photo, rating: rating)
+            
+        }
     }
     
     // MARK: Actions
