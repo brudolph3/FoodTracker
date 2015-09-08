@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         // Handle the text fields user input through delegate callbacks.
         nameTextField.delegate = self
+        checkValidMealName()
     }
     
     // MARK: UITextFieldDelegate
@@ -38,6 +39,17 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     func textFieldDidEndEditing(textField: UITextField) {
         mealNameLabel.text = textField.text
+        checkValidMealName()
+        navigationItem.title = textField.text
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        saveButton.enabled = false
+    }
+    
+    func checkValidMealName() {
+        let text = nameTextField.text ?? ""
+        saveButton.enabled = !text.isEmpty
     }
 
     // MARK: UIImagePickerControllerDelegate
